@@ -44,7 +44,9 @@ body {
 .footer-contacts:focus {
   color: var(--accent-color);
 }
-
+.nav-link.current {
+  color: var(--accent-color);
+}
 .contact-link {
   color: var(--primary-text-color);
 }
@@ -62,6 +64,7 @@ body {
 }
 .btn {
   background-color: var(--accent-color);
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -70,6 +73,18 @@ body {
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   cursor: pointer;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 .advantages-title {
   font-weight: 700;
@@ -131,6 +146,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 .portfolio-btn {
+  font-family: inherit;
   background-color: var(--secondary-background-color);
   font-weight: 500;
   font-size: 16px;
